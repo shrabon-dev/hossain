@@ -8,8 +8,8 @@ export default function Work() {
     <>
       <div className='relative z-10'>
 
-    <span className='w-20 blur-[90px]  h-1/4 absolute top-32 right-0 z-[-1] bg-[#1fafb4] tablet:block sm_mobile:hidden'></span>
-    <span className='w-20 blur-[90px]  h-1/4 absolute bottom-32 left-0 z-[-1] bg-[#467fe9] tablet:block sm_mobile:hidden'></span>
+    <span className='lg_tablet:w-20 tablet:w-10 lg_tablet:blur-[90px] tablet:blur-sm  h-1/4 absolute top-32 right-0 z-[-1] bg-[#1fafb4] tablet:block sm_mobile:hidden'></span>
+    <span className='lg_tablet:w-20 tablet:w-10 lg_tablet:blur-[90px] tablet:blur-sm  h-1/4 absolute bottom-32 left-0 z-[-1] bg-[#467fe9] tablet:block sm_mobile:hidden'></span>
       <div className='bg-2nd_color/20 backdrop-blur-3xl'>
         <div className='container py-10'>
             {/* Section Heading Start */}

@@ -6,7 +6,7 @@ export default function Banner() {
     <>
     <div>
             {/* Shape start */}
-            <div className='w-52 h-52 bg-[#9c902336] blur-3xl absolute right-0 top-2 -rotate-45 tablet:block sm_mobile:hidden'></div>
+            <div className='w-52 h-52 bg-[#9c902336] blur-3xl absolute right-0 top-2 lg_tablet:-rotate-45 tablet:block sm_mobile:hidden'></div>
         <div className='container py-32 relative'>
             <div className='flex justify-between tablet:flex-row sm_mobile:flex-col-reverse items-center'>
                 <div className='md:w-1/2 tablet:w-2/3 sm_mobile:w-full tablet:text-left sm_mobile:text-center'>

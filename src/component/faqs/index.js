@@ -23,7 +23,7 @@ export default function Faqs() {
   return (
     <>
         <div>
-            <div className='container tablet:py-52 sm_mobile:py-0'>
+            <div className='container tablet:py-52 sm_mobile:py-0 overflow-hidden'>
                 <div className=''>
             
                    <div className='tablet:flex justify-between   items-start flex-wrap'>

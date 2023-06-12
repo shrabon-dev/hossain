@@ -6,10 +6,10 @@ export default function Team() {
   return (
     <>
     <div className='relative z-20'>
-    <span className='w-52 blur-[90px]  h-52 absolute top-32 left-0 z-[-1] bg-active block'></span>
-      <span className='w-52 blur-[60px]  h-52 absolute bottom-32 right-0 z-[-1] bg-[#00a2ff9a] block'></span>
+    <span className='lg_tablet:w-52 tablet:w-1/3 blur-[90px]  h-52 absolute top-32 left-0 z-[-1] bg-active block'></span>
+      <span className='lg_tablet:w-52 tablet:w-1/3 blur-[60px]  h-52 absolute bottom-32 right-0 z-[-1] bg-[#00a2ff9a] block'></span>
       <div className='bg-2nd_color/25 backdrop-blur-md z-20 relative'>
-        <div className='container tablet:py-52 sm_mobile:py-6'>
+        <div className='container tablet:py-52 sm_mobile:py-6 overflow-hidden'>
              {/* Section Heading Start */}
              <Title shortTile='Here are all expert members' title='Our Team Member' shortDescription="Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions h" waterMark='Team'/>
          

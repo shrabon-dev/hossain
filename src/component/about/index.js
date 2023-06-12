@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
         <div className='relative '>
-            <div className='container lg:pb-52 md:py-20'>
+            <div className='container lg:pb-52 md:py-20 overflow-hidden'>
                 <div className='flex tablet:flex-row sm_mobile:flex-col-reverse justify-between items-center gap-5'>
                     <div className='tablet:w-1/3 sm_mobile:w-1/2 relative tablet:float-none sm_mobile:float-right tablet:pl-0 sm_mobile:pl-5'>
                         <picture>
@@ -30,7 +30,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <span className='w-[120%] h-full rotate-[12deg] bg-[#1bdbfd1a] blur-3xl -left-32 top-0 block absolute tablet:block sm_mobile:hidden'></span>
+            <span className='lg_tablet:w-[120%] tablet:w-full h-full lg_tablet:rotate-[12deg] bg-[#1bdbfd1a] blur-3xl -left-32 top-0 block absolute tablet:block sm_mobile:hidden'></span>
         </div>
     </>
   )

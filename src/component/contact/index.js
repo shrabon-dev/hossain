@@ -8,7 +8,7 @@ export default function ContactUs() {
   return (
     <>
         <div>
-            <div className='container py-20'>
+            <div className='container py-20 overflow-hidden'>
                 {/* Section Heading Start */}
                 
                 <Title shortTile='Here are all expert members' title='Contact With Us' shortDescription='' waterMark='Contact' />

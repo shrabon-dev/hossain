@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <>
     <div className='relative overflow-hidden z-50'>
-          <div className='w-96 h-96 bg-[#0d704a3d] blur-3xl absolute z-0 right-0 top-0 -rotate-45'>
+          <div className='lg_tablet:w-96 tablet:w-1/3  h-96 bg-[#0d704a3d] blur-3xl absolute z-0 right-0 top-0 lg_tablet:-rotate-45 tablet:rotate-0'>
           </div>
           <div className='w-96 h-96 bg-[#b45d2a3d] blur-3xl absolute z-10 left-0 top-0 -rotate-45'>
           </div>
