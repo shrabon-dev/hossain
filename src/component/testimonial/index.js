@@ -73,14 +73,14 @@ export default function Testimonial() {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 575,
+        breakpoint: 992,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       },
       {
-        breakpoint: 300,
+        breakpoint: 620,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -97,11 +97,9 @@ export default function Testimonial() {
     <>
         <div className="bg-cover bg-center w-full overflow-hidden" style={{ backgroundImage: `url('./images/testimonial/bg.jpg')` }}>
             <div className='bg-main_color/90 w-full  py-20'>
-              <div className='container overflow-hidden'>
+              <div className='container'>
                   {/* Section Heading Start */}
-       
                    <Title shortTile='Here are all feedback of our clients' title='Testimonial' shortDescription='' waterMark='FeedBack' />
-
                   {/* Section Heading End */}
                   {/* FeedBack Start */}
                   <Slider {...settings} ref={sliderRef}>

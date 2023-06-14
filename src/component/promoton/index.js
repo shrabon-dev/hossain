@@ -9,13 +9,13 @@ export default function Promoton() {
       <div className='relative z-[1]'>
         <span className='w-96 h-96 rotate-12 z-[-1] bg-[#083f087a] absolute left-0 top-0 block blur-4xl tablet:block sm_mobile:hidden'></span>
         <div className='container tablet:py-32 sm_mobile:py-14 relative z-[2]'>
-          <div className='tablet:flex justify-between lg:gap-20 md:gap-5'>
-            <div className='xl:w-1/2 lg:w-1/2 md:w-1/2 tablet:w-1/2 tablet:mb-0 sm_mobile:mb-10 sm_mobile:w-full'>
+          <div className='md:flex justify-between lg:gap-20 md:gap-5'>
+            <div className='xl:w-1/2 lg:w-1/2 md:w-1/2 lg_tablet:w-1/2 tablet:w-full tablet:mb-0 sm_mobile:mb-10 sm_mobile:w-full'>
               <h2 className='font-poppin text-white lg:text-5xl md:text-4xl sm_mobile:text-3xl lg:font-bold md:font-semibold pb-8 !leading-normal'>How we support our client all over the world</h2>
               <p className='font-poppin text-gray-400 lg:text-base md:text-base font-light leading-relaxed pb-5'>SaaS become a common delivery model for many business application, including 
                 office software, messaging software, payroll processing software, DBMS software, 
                 management software</p>
-                <div className='pt-5'>
+                <div className='pt-5 lg_tablet:mb-0 tablet:mb-10'>
                   <p className='font-poppin text-gray-200 lg:text-base md:text-base font-medium uppercase leading-relaxed mt-10 pb-2'>Client Satisfaction</p>
                    <span><AiFillStar className='inline-block text-active text-xl'/>
                    <AiFillStar className='inline-block text-active text-xl'/>
@@ -26,7 +26,7 @@ export default function Promoton() {
                    </span>
                 </div>
             </div>
-            <div className='xl:w-1/3 lg:w-1/2 md:w-1/2 tablet:w-1/2 sm_mobile:w-full'>
+            <div className='xl:w-1/3 lg:w-1/2 md:w-1/2 lg_tablet:w-1/2 tablet:w-full sm_mobile:w-full'>
                 <div>
                      <div className='flex items-center bg-2nd_color p-4 rounded-full mb-5'>
                           <span className='bg-main_color h-full tablet:p-6 sm_mobile:p-2 rounded-full tablet:mr-6 sm_mobile:mr-2'>

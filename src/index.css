@@ -16,13 +16,13 @@
      @apply w-[1320px] m-auto tablet:px-10 sm_mobile:px-3 sm_mobile:max-w-full
     }
     .nav{
-      @apply py-6 border-b-2 border-[#22324455] 
+      @apply tablet:py-6 sm_mobile:py-2 border-b-2 border-[#22324455] 
     }
     .fixed_menu{
       @apply fixed w-full z-[999999] bg-[#22324455] backdrop-blur-md duration-300 ease-in-out
     }
     .a_css{
-      @apply font-k2d xl:text-base md:text-sm sm_mobile:text-xs  rounded duration-300 ease-in-out font-light px-5 mx-2 py-2 hover:a_active
+      @apply font-k2d lg_tablet:text-base md:text-sm tablet:text-xs sm_mobile:text-xs  rounded duration-300 ease-in-out font-light lg_tablet:px-4  md:px-2 tablet:px-1 md:mx-2 tablet:mx-1 py-2 hover:a_active
     }
     .a_active{
         @apply bg-[#22324455] text-active rounded
@@ -32,5 +32,8 @@
     }
     .accordine{
       @apply text-gray-400 bg-[#142038] rounded font-light text-sm font-poppin mt-4 duration-300 ease-in-out p-3
+    }
+    .mobileMenu {
+      @apply text-gray-200 ease-in-out fixed left-1/2 top-0  -translate-x-1/2 duration-1000 bg-2nd_color p-5 w-full z-[99999] rounded-xl
     }
 }

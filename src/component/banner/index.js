@@ -6,11 +6,11 @@ export default function Banner() {
     <>
     <div>
             {/* Shape start */}
-            <div className='w-52 h-52 bg-[#9c902336] blur-3xl absolute right-0 top-2 lg_tablet:-rotate-45 tablet:block sm_mobile:hidden'></div>
+            <div className='w-52 h-52 bg-[#9c902336] blur-3xl absolute right-0 top-2  tablet:block sm_mobile:hidden'></div>
         <div className='container py-32 relative'>
             <div className='flex justify-between tablet:flex-row sm_mobile:flex-col-reverse items-center'>
                 <div className='md:w-1/2 tablet:w-2/3 sm_mobile:w-full tablet:text-left sm_mobile:text-center'>
-                    <h1 className='font-k2d lg:text-8xl md:text-4xl tablet:text-6xl tablet:leading-[1.6] sm_mobile:text-3xl lg:pb-5 md:pb-10 text-white font-bold tablet:mt-0 sm_mobile:mt-10'>Build Your <span className='block lg:pt-5 lg:text-6xl md:text-4xl md:pt-2 tablet:text-4xl  lg:leading-none md:leading-normal'>Awesome Platform</span> </h1>
+                    <h1 className='font-k2d lg:text-8xl md:text-4xl tablet:text-6xl tablet:leading-[1.6] sm_mobile:text-3xl lg:pb-5 md:pb-10 text-white font-bold tablet:mt-0 sm_mobile:mt-10'>Build Your <span className='block lg:pt-5 xl:text-5xl lg:text-5xl md:text-4xl md:pt-2 tablet:text-4xl  lg:leading-none md:leading-normal'>Awesome Platform</span> </h1>
                     <p className='font-poppin text-gray-300 tablet:text-sm sm_mobile:text-xs font-normal sm_mobile:!leading-[1.8] tablet:w-full sm_mobile:w-full tablet:m-0 sm_mobile:m-auto sm_mobile:pt-6'>Enver studio is a digital studio that offers several services such as UI/UX Design to developers, 
                         we will provide the best service for those of you who use our services.</p>
                    

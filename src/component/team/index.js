@@ -15,7 +15,7 @@ export default function Team() {
          
             {/* Section Heading End */}
             <div className='flex tablet:justify-between sm_mobile:justify-around flex-wrap items-center lg:gap-10 md:gap-10 sm_mobile:gap-5'>
-                <div className=' lg:w-48 md:w-1/4 sm_mobile:w-44 group mb-10'>
+                <div className=' lg:w-48 md:w-1/4 tablet:w-48 sm_mobile:w-44 group mb-10'>
                   <div className='border-2 border-active w-full tablet:h-48 sm_mobile:h-44 rounded-full relative'> 
                     <div className='bg-2nd_color w-full h-full rounded-full absolute left-5 bottom-2 duration-300 ease-in-out group-hover:bottom-0 group-hover:left-0 overflow-hidden'>
                         <img className='w-full h-full block' src='./images/team/team (3).jpg' alt='team 1'/>
@@ -34,7 +34,7 @@ export default function Team() {
                     </div>
                   </div>
                 </div>
-                <div className=' lg:w-48 md:w-1/4 sm_mobile:w-44 group mb-10'>
+                <div className=' lg:w-48 md:w-1/4 tablet:w-48 sm_mobile:w-44 group mb-10'>
                   <div className='border-2 border-active w-full tablet:h-48 sm_mobile:h-44 rounded-full relative'> 
                     <div className='bg-2nd_color w-full h-full rounded-full absolute left-5 bottom-2 duration-300 ease-in-out group-hover:bottom-0 group-hover:left-0 overflow-hidden'>
                         <img className='w-full h-full block' src='./images/team/team (1).jpg' alt='team 1'/>
@@ -53,7 +53,7 @@ export default function Team() {
                     </div>
                   </div>
                 </div>
-                <div className=' lg:w-48 md:w-1/4 sm_mobile:w-44 group mb-10'>
+                <div className=' lg:w-48 md:w-1/4 tablet:w-48 sm_mobile:w-44 group mb-10'>
                   <div className='border-2 border-active w-full tablet:h-48 sm_mobile:h-44 rounded-full relative'> 
                     <div className='bg-2nd_color w-full h-full rounded-full absolute left-5 bottom-2 duration-300 ease-in-out group-hover:bottom-0 group-hover:left-0 overflow-hidden'>
                         <img className='w-full h-full block' src='./images/team/team (2).jpg' alt='team 1'/>
@@ -72,7 +72,7 @@ export default function Team() {
                     </div>
                   </div>
                 </div>
-                <div className=' lg:w-48 md:w-1/4 sm_mobile:w-44 group mb-10'>
+                <div className=' lg:w-48 md:w-1/4 tablet:w-48 sm_mobile:w-44 group mb-10'>
                   <div className='border-2 border-active w-full tablet:h-48 sm_mobile:h-44 rounded-full relative'> 
                     <div className='bg-2nd_color w-full h-full rounded-full absolute left-5 bottom-2 duration-300 ease-in-out group-hover:bottom-0 group-hover:left-0 overflow-hidden'>
                         <img className='w-full h-full block' src='./images/team/team (1).jpg' alt='team 1'/>
@@ -91,7 +91,7 @@ export default function Team() {
                     </div>
                   </div>
                 </div>
-                <div className=' lg:w-48 md:w-1/4 sm_mobile:w-44 group mb-10'>
+                <div className=' lg:w-48 md:w-1/4 tablet:w-48 sm_mobile:w-44 group mb-10'>
                   <div className='border-2 border-active w-full tablet:h-48 sm_mobile:h-44 rounded-full relative'> 
                     <div className='bg-2nd_color w-full h-full rounded-full absolute left-5 bottom-2 duration-300 ease-in-out group-hover:bottom-0 group-hover:left-0 overflow-hidden'>
                         <img className='w-full h-full block' src='./images/team/team (3).jpg' alt='team 1'/>

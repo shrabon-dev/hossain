@@ -22,13 +22,13 @@ export default function Faqs() {
 
   return (
     <>
-        <div>
-            <div className='container tablet:py-52 sm_mobile:py-0 overflow-hidden'>
+        <div className='bg-2nd_color/20 rounded-b-full'>
+            <div className='container lg_tablet:py-52% tablet:py-32 sm_mobile:py-0 overflow-hidden'>
                 <div className=''>
             
                    <div className='tablet:flex justify-between   items-start flex-wrap'>
                       {/* ======================= Faqs Image ======================= */}
-                      <div className='lg:w-1/2 md:w-full'>
+                      <div className='lg:w-1/2 md:w-1/2 lg_tablet:w-1/2 tablet:w-1/2'>
                         {/* <div>
                             <picture>
                                 <img src='./images/faq/faq.png' alt='faq png' />
@@ -43,7 +43,7 @@ export default function Faqs() {
                     </div>
                     {/* ======================= Faqs Image ======================= */}
                     {/* ======================= Faqs Start ======================= */}
-                    <div className='md:w-1/2  m-auto'>
+                    <div className='md:w-1/2 lg_tablet:w-1/2 tablet:w-1/2 m-auto'>
                         <div>
                             {/* ========== One Faqs Question ============ */}
                             {data.map((item,i) => 
@@ -51,7 +51,7 @@ export default function Faqs() {
                         
                             
                             <div className='bg-2nd_color p-4 rounded mb-5'>
-                                <h4 onClick={()=>handleAccordion(i)} className='cursor-pointer text-gray-200 font-normal tablet:text-xl sm_mobile:text-base font-poppin flex justify-between'> {++i}.  {item.title} <span className='cursor-pointer'> 
+                                <h4 onClick={()=>handleAccordion(i)} className='cursor-pointer text-gray-200 font-normal lg_tablet:text-xl tablet:text-sm sm_mobile:text-base font-poppin flex justify-between'> {++i}.  {item.title} <span className='cursor-pointer'> 
                                 {faqs === i ?
                                 <AiOutlineMinus onClick={() => setFaqs(!faqs)} className='inline-block'/>
                                 :
