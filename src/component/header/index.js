@@ -25,17 +25,13 @@ export default function Header() {
         setIsScrollTop(scrollTop>height)
     }
 
-
     window.addEventListener('scroll', handleScroll);
     return () => {
         window.removeEventListener('scroll', handleScroll);
       };
 
-      
     },[])
    
-    
-
     useEffect(() => {
         // Accessing the li element using the ref
         const listItemOne = Array.from(itemListOne.current.children);
@@ -60,7 +56,6 @@ export default function Header() {
                             <li><a className='a_css a_active' href=''>Home</a></li>
                             <li><a className='a_css' href=''>Service</a></li>
                             <li><a className='a_css' href=''>About us</a></li>
-                            {/* <li><a className='a_css' href=''>Our Team</a></li> */}
                         </ul>
                     </div>
 
@@ -103,7 +98,7 @@ export default function Header() {
                             <ul className={`${mobileMenuShow ? 'mobileMenu block mobileMenuExpanded' : 'mobileMenu mobileMenuColspan' }`}>
                                 <span onClick={()=>setMobileMenuShow(!mobileMenuShow)} className='border-2 border-b-0 border-l-0 rounded-full p-[2px] border-active/60 inline-block absolute right-5 cursor-pointer'> <AiOutlineClose className='text-2xl'/> </span>
                             {mobileMenu.map((item, index) => (
-                                <li className='last:bg-active/40 last:hover:text-active  last:hover:bg-main_color last:shadow-sm last:drop-shadow-2xl  last:mt-5  last:px-4 last:m-auto last:w-32 last:text-center last:rounded-lg last:inline-block font-k2d  duration-300 hover:text-active text-base py-2' key={index}><a className='' href='#'>{item.textContent}</a></li>
+                                <li className='last:bg-active last:hover:text-active  last:hover:bg-main_color last:shadow-sm last:drop-shadow-2xl  last:mt-5  last:px-4 last:m-auto last:w-32 last:text-center last:rounded-lg last:inline-block font-k2d  duration-300 hover:text-active text-base py-2' key={index}><a className='' href='#'>{item.textContent}</a></li>
                                 ))}
                             </ul>
                         {/* } */}

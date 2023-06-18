@@ -149,10 +149,8 @@ body{
     opacity: 1;
 }
 }
-/* 
-.slick-arrow.slick-prev {
-  background: black;
+
+.text_stroke{
+  -webkit-text-stroke: 1px #FC6A00;
+  color: transparent;
 }
-.slick-arrow.slick-next {
-  background: black;
-} */

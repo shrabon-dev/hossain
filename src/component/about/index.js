@@ -8,12 +8,11 @@ export default function About() {
                 <div className='flex tablet:flex-row sm_mobile:flex-col-reverse justify-between items-center gap-5'>
                     <div className='tablet:w-1/3 sm_mobile:w-1/2 relative tablet:float-none sm_mobile:float-right tablet:pl-0 sm_mobile:pl-5'>
                         <picture>
-                            <img className='rounded-t-full rounded-r-full ' src='./images/about/abt.jpg' alt='about png'/>
+                            <img className='w-full block' src='./images/about/abt.png' alt='about png'/>
                         </picture>
-                        <picture>
+                        {/* <picture>
                             <img className='rounded-full  absolute -top-20 w-52 h-52 -left-32' src='./images/about/about.jpg' alt='about png'/>
-                        </picture>
-                   
+                        </picture> */}
                     </div>
                     <div className='tablet:w-1/2 '>
                         <h3 className='font-poppin text-white lg:text-6xl md:text-4xl  sm_mobile:text-3xl font-medium pb-8'>Introduction To Best<span className='block pt-3 text-active'> Digital Agency!!</span></h3>
