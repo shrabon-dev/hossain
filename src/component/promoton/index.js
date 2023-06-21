@@ -6,7 +6,8 @@ import { AiFillStar, AiOutlineGlobal,AiOutlineTeam } from 'react-icons/ai'
 export default function Promoton() {
   return (
     <>
-      <div className='relative z-[1]'>
+      <div className='bg-white '>
+      <div className='relative bg-main_color z-[1] tablet:rounded-tl-[300px]'>
         <span className='w-96 h-96 rotate-12 z-[-1] bg-[#083f087a] absolute left-0 top-0 block blur-4xl tablet:block sm_mobile:hidden'></span>
         <div className='container tablet:py-32 sm_mobile:py-14 relative z-[2]'>
           <div className='md:flex justify-between lg:gap-20 md:gap-5'>
@@ -61,6 +62,7 @@ export default function Promoton() {
        
           </div>
         </div>
+      </div>
       </div>
     </>
   )

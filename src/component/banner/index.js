@@ -4,10 +4,11 @@ import { BsPlayFill } from 'react-icons/bs'
 export default function Banner() {
   return (
     <>
-    <div>
+    <div className='bg-white relative z-20'>
+    <div className='rounded-br-[300px] bg-main_color'>
             {/* Shape start */}
-            <div className='w-52 h-52 bg-[#9c902336] blur-3xl absolute right-0 top-2  tablet:block sm_mobile:hidden'></div>
-        <div className='container lg:py-28 sm_mobile:py-28 relative'>
+            <div className='w-52 h-52 bg-[#9c902336] z-10 blur-3xl absolute right-0 top-2  tablet:block sm_mobile:hidden '></div>
+        <div className='container lg:py-28 sm_mobile:py-28 relative '>
             <div className='flex justify-between tablet:flex-row sm_mobile:flex-col-reverse items-center'>
                 <div className='md:w-1/2 tablet:w-2/3 sm_mobile:w-full tablet:text-left sm_mobile:text-center'>
                     <h1 className='font-k2d lg:text-8xl md:text-4xl tablet:text-6xl tablet:leading-[1.6] sm_mobile:text-3xl lg:pb-5 md:pb-10 text-white font-bold tablet:mt-0 sm_mobile:mt-10'>Build Your <span className='block lg:pt-5 xl:text-5xl lg:text-5xl md:text-4xl md:pt-2 tablet:text-4xl  lg:leading-none md:leading-normal'>Awesome Platform</span> </h1>
@@ -41,6 +42,7 @@ export default function Banner() {
                 </div>
             </div>
         </div>
+    </div>
     </div>
     </>
   )

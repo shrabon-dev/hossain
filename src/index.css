@@ -35,4 +35,5 @@
     .mobileMenu {
       @apply text-gray-200 ease-in-out fixed left-1/2 top-0  -translate-x-1/2 duration-1000 bg-2nd_color p-5 w-full z-[99999] rounded-xl
     }
+
 }

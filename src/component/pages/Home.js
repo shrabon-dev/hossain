@@ -10,6 +10,7 @@ import Team from '../team'
 import Faqs from '../faqs'
 import ContactUs from '../contact'
 import Testimonial from '../testimonial'
+import VideoCard from '../videoCard'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <About/>
         <Promoton/>
         <Team/>
+        <VideoCard/>
         <Service/>
         <Work/>
         <Testimonial/>

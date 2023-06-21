@@ -92,7 +92,10 @@ body{
   -o-transform: translateX(100%);
 }
 
-
+    /* .bg_vcard{
+      background-image: url('images/vcard.jpg') no-repeat center;
+      background-size: cover;
+    } */
 
 .slick-dots li button:before{
   color: #FC6A00 !important;
