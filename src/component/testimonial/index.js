@@ -96,7 +96,7 @@ export default function Testimonial() {
   return (
     <>
         <div className="bg-cover bg-center w-full overflow-hidden" style={{ backgroundImage: `url('./images/testimonial/bg.jpg')` }}>
-            <div className='bg-main_color/90 w-full  py-20'>
+            <div className='bg-main_color/90 backdrop-blur-md w-full  py-20'>
               <div className='container'>
                   {/* Section Heading Start */}
                    <Title shortTile='Here are all feedback of our clients' title='Testimonial' shortDescription='' waterMark='FeedBack' />
