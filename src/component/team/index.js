@@ -6,11 +6,12 @@ import TeamMemberItem from '../reuseable/teamMember';
 export default function Team() {
   return (
     <>
-    <div className='relative rounded-tr-[300px] z-20'>
+    <div className='relative rounded-tr-[300px] rounded-bl-[300px] z-20'>
       <span className='w-52 h-52 bg-active rounded-full absolute right-0 top-0 z-20'></span>
-    <span className='lg_tablet:w-52 tablet:w-1/3  rounded-full  h-52 absolute top-32 left-0 z-[-1] bg-[#181bfcfb] block'></span>
-      <span className='lg_tablet:w-52 tablet:w-1/3 rounded-full  h-52 absolute bottom-32 right-0 z-[-1] bg-[#00a2ff9a] block'></span>
-      <div className='bg-2nd_color/25 rounded-tr-[300px] backdrop-blur-md z-20 relative'>
+      <span className='w-52 h-52 bg-active rounded-full absolute left-0 bottom-0 z-20'></span>
+    <span className='lg_tablet:w-20 tablet:w-20  rounded-full  h-20 absolute top-32 left-0 z-[-1] bg-[#3dffd5fb] block'></span>
+      <span className='lg_tablet:w-32 tablet:w-32 rounded-full  h-32 absolute bottom-32 right-0 z-[-1] bg-[#49f8989a] block'></span>
+      <div className='bg-2nd_color/25 rounded-bl-[300px] rounded-tr-[300px] backdrop-blur-md z-20 relative'>
         <div className='container tablet:py-52 sm_mobile:py-6 overflow-hidden'>
              {/* Section Heading Start */}
              <Title shortTile='Here are all expert members' title='Our Team Member' shortDescription="Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions h" waterMark='Team'/>

@@ -7,7 +7,12 @@ import Title from '../reuseable/heading';
 export default function ContactUs() {
   return (
     <>
-        <div>
+    <div className='bg-white'>
+        <div className='relative overflow-hidden bg-main_color rounded-tr-[300px]'>
+            <div className='absolute'>
+                <span className='w-96 h-32 bg-white block rotate-45 absolute -top-6 -left-28 '></span>
+                <span className='w-96 h-32 bg-active block rotate-45 shadow-2xl'></span>
+            </div>
             <div className='container py-20 overflow-hidden'>
                 {/* Section Heading Start */}
                 
@@ -40,7 +45,6 @@ export default function ContactUs() {
                         
                     </div>
                     <div className='tablet:w-1/2 sm_mobile:w-full'>
-
                         <form className='w-full m-auto bg-2nd_color p-6 rounded-md'>
                             <h6  className='font-poppin lg_tablet:w-1/2 tablet:w-full m-auto text-xl mb-10 uppercase border-b border-hover_color/75 pb-3 text-gray-300 font-normal leading-relaxed text-center'> <span className='text-active'>Get Touch With Us</span> </h6>
                             <div>
@@ -63,6 +67,7 @@ export default function ContactUs() {
                 </div>
             </div>
         </div>
+    </div>
     </>
   )
 }

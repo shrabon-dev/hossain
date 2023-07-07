@@ -35,5 +35,17 @@
     .mobileMenu {
       @apply text-gray-200 ease-in-out fixed left-1/2 top-0  -translate-x-1/2 duration-1000 bg-2nd_color p-5 w-full z-[99999] rounded-xl
     }
-
+    .waterMarkCss{
+      @apply font-poppin lg_tablet:text-[200px] tablet:text-[100px] sm_mobile:text-[56px] -translate-x-1/2 -translate-y-1/2 tracking-wide text-stroke text-transparent font-bold absolute  top-1/4 left-1/2 z-[-1]
+    }
+    .titleH2Css{
+      @apply font-k2d font-bold  tablet:text-5xl sm_mobile:text-3xl text-gray-300 
+    }
+    .Card3d{
+      transform: rotateX(-69deg) perspective(500px)  skewY(0);
+      -webkit-transform: rotateX(-69deg) perspective(500px)  skewY(0);
+      -moz-transform: rotateX(-69deg) perspective(500px)  skewY(0);
+      -ms-transform: rotateX(-69deg) perspective(500px)  skewY(0);
+      -o-transform: rotateX(-69deg) perspective(500px)  skewY(0);
+}
 }

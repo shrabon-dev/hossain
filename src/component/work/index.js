@@ -6,11 +6,13 @@ import Title from '../reuseable/heading'
 export default function Work() {
   return (
     <>
-      <div className='relative z-10'>
+      <div className='relative z-10 border-t-4 border-white'>
 
-    <span className='lg_tablet:w-20 tablet:w-10 lg_tablet:blur-[90px] tablet:blur-sm  h-1/4 absolute top-32 right-0 z-[-1] bg-[#1fafb4] tablet:block sm_mobile:hidden'></span>
-    <span className='lg_tablet:w-20 tablet:w-10 lg_tablet:blur-[90px] tablet:blur-sm  h-1/4 absolute bottom-32 left-0 z-[-1] bg-[#467fe9] tablet:block sm_mobile:hidden'></span>
-      <div className='bg-2nd_color/20 backdrop-blur-3xl'>
+    <span className='lg_tablet:w-20 tablet:w-10 animate-small_big lg_tablet:h-20 tablet:h-10 absolute top-0  left-52 z-[-1] rotate-45 bg-active tablet:block sm_mobile:hidden'></span>
+    {/* <span className='lg_tablet:w-20 tablet:w-10 animate-rotate lg_tablet:h-20 tablet:h-10 absolute top-0 rounded-full left-44 z-[-1] bg-main_color tablet:block sm_mobile:hidden'></span> */}
+    <span className='lg_tablet:w-20 tablet:w-10 animate-rotate lg_tablet:h-20 tablet:h-10 absolute top-32 right-10 z-[-1] bg-[#1fafb4] tablet:block sm_mobile:hidden'></span>
+    <span className='lg_tablet:w-20 tablet:w-10 animate-small_big lg_tablet:h-20 tablet:h-10 absolute bottom-32 left-10 rotate-45 z-[-1] bg-[#467fe9] tablet:block sm_mobile:hidden'></span>
+      <div className=' backdrop-blur-0'>
         <div className='container py-10'>
             {/* Section Heading Start */}
 

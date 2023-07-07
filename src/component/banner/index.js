@@ -23,11 +23,11 @@ export default function Banner() {
                     </div>
                 </div>
                 <div className='md:w-1/2  tablet:w-1/2 sm_mobile:w-1/2 text-right flex justify-end relative'>
-                    <span className='absolute w-full z-[2] lg:bottom-[43%] tablet:bottom-[40%] lg:left-[25%] sm_mobile:left-[10%] -translate-x-2/4  -translate-y-1/2 sm_mobile:bottom-0 tablet:right-0 sm_mobile:right-36 '>
-                       <div className=' lg:text-[2.8rem] lg_tablet:text-4xl tablet:text-[1.8rem] -rotate-90 w-[600px] text_stroke font-black'>Hossain A Creative Agency</div>
+                    <span className='animate-moveTop absolute w-full z-[2] lg:bottom-[43%] tablet:bottom-[20%] xl:left-[25%] lg:left-0 md:block sm_mobile:hidden -translate-x-2/4  -translate-y-1/2 sm_mobile:bottom-0 lg_tablet:left-[-12%] md:left-[-60px] tablet:left-0 '>
+                       <div className=' lg:text-[2.8rem] lg_tablet:text-4xl tablet:text-[1.8rem] sm_mobile:text-[1.3rem] -rotate-90 w-[600px] text_stroke font-black'>Hossain A Creative Agency</div>
                     </span>
                     <picture>
-                        <img className="lg_tablet:w-[400px] relative z-[1] tablet:w-80 rounded-lg block" src="./images/banner/banner.jpg" alt="banner png" />
+                        <img className="lg_tablet:w-[400px] animate-carveCard relative z-[1] tablet:w-80 rounded-lg block" src="./images/banner/banner.jpg" alt="banner png" />
                     </picture>
                     {/* <span className='absolute tablet:-top-20 sm_mobile:-top-28 tablet:-right-10 sm_mobile:right-0 tablet:w-1/2 sm_mobile:w-full'>
                         <picture>

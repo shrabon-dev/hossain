@@ -6,7 +6,10 @@ module.exports = {
   theme: {
     extend: {
       animation: {
+        'carveCard': 'carveCard 2.5s ease-in-out',
         'moveTop': 'moveTop 3s linear infinite',
+        'small_big': 'small_big 3s linear infinite',
+        'rotate': 'rotate 4s linear infinite',
       },
       keyframes: {
         // smallBig: {
@@ -18,9 +21,21 @@ module.exports = {
           '50%': { transform: 'rotate(3deg)' },
         },
         moveTop: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-20px)' },
-        }
+          '0%, 100%': { transform: 'translateX(-50%) translateY(-50%)' },
+          '50%': { transform: 'translateX(-50%) translateY(-80%)' },
+        },
+        carveCard: {
+          '0%': { transform: 'rotateX(-69deg) perspective(500px)  skewY(0)'},
+          '100%': { transform: 'rotateX(0deg) perspective(500px)  skewY(0)' },
+        },
+        small_big: {
+          '0%, 100%': { transform: 'scale(.8) rotate(45deg)' },
+          '50%': { transform: 'scale(.4) rotate(45deg)' },
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
       },
       colors: {
         'main_color': '#050A1E',

@@ -22,7 +22,7 @@ export default function Faqs() {
 
   return (
     <>
-        <div className='bg-2nd_color/20 rounded-b-full'>
+        <div className='bg-white rounded-tr-[300px]'>
             <div className='container lg_tablet:py-52% tablet:py-32 sm_mobile:py-8 overflow-hidden'>
                 <div className=''>
             
@@ -36,7 +36,7 @@ export default function Faqs() {
                         </div> */}
                                 {/* ======================= Title Start ======================= */}
                     <div className='tablet:mb-32 sm_mobile:mb-5 sm_mobile:!text-center'>
-                       <Title shortTile='Your Frequently Asked Questions' title="Faq's" shortDescription='' waterMark="Faq's" />
+                       <Title txtColor="!text-main_color" shortTile='Your Frequently Asked Questions' title="Faq's" shortDescription='' waterMark="Faq's" />
                     </div>
 
                     {/* ======================= Title End ======================= */}
@@ -50,8 +50,8 @@ export default function Faqs() {
                             
                         
                             
-                            <div className='bg-2nd_color p-4 rounded mb-5'>
-                                <h4 onClick={()=>handleAccordion(i)} className='cursor-pointer text-gray-200 font-normal lg_tablet:text-xl tablet:text-sm sm_mobile:text-base font-poppin flex justify-between'> {++i}.  {item.title} <span className='cursor-pointer'> 
+                            <div className='bg-white shadow-lg shadow-black/25 p-4 rounded mb-5'>
+                                <h4 onClick={()=>handleAccordion(i)} className='cursor-pointer text-black font-normal lg_tablet:text-xl tablet:text-sm sm_mobile:text-base font-poppin flex justify-between'> {++i}.  {item.title} <span className='cursor-pointer'> 
                                 {faqs === i ?
                                 <AiOutlineMinus onClick={() => setFaqs(!faqs)} className='inline-block'/>
                                 :
