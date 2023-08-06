@@ -7,13 +7,13 @@ export default function Service() {
   return (
     <>
         <div className='bg-main_color'>
-        <div className='container py-20 overflow-hidden'>
+        <div className='container py-32 overflow-hidden'>
             {/* Section Heading Start */}
             
              <Title shortTile='What We’re Offering' title='Our Services' shortDescription='Consectetur adipiscing elit. Donec erat nunc, hendrerit non sagittis  velit et augue tempor sagittis. Maecenas orci dui, rutrum quis nisi at, iaculis accumsan est.' waterMark='Service' />
 
             {/* Section Heading End */}
-            <div className='flex justify-between items-center flex-wrap '>
+            <div className='flex justify-between items-center flex-wrap pt-32'>
               {/* reuseable component used */}
               <ServiceItem title="Graphics Design" icon={BsFillBrushFill} description="Consectetur adipiscing elit. Donec erat nunc, hendrerit non sagittis  velit et augue tempor sagittis. Maecenas orci dui, rutrum quis nisi at, iaculis accumsan est."/>
               <ServiceItem title="Web Design" icon={BsReverseLayoutTextWindowReverse} description="Consectetur adipiscing elit. Donec erat nunc, hendrerit non sagittis  velit et augue tempor sagittis. Maecenas orci dui, rutrum quis nisi at, iaculis accumsan est."/>
