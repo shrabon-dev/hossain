@@ -62,7 +62,7 @@ export default function Banner() {
                 </motion.div>
                 <div className='md:w-1/2  tablet:w-1/2 sm_mobile:w-1/2 text-right flex justify-end relative'>
                     <span className='animate-moveTop absolute w-full z-[2] lg:bottom-[43%] tablet:bottom-[20%] xl:left-[25%] lg:left-0 md:block sm_mobile:hidden -translate-x-2/4  -translate-y-1/2 sm_mobile:bottom-0 lg_tablet:left-[-12%] md:left-[-60px] tablet:left-0 '>
-                       <motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ duration:1.6,ease:'linear' }} className=' lg:text-[2.8rem] lg_tablet:text-4xl tablet:text-[1.8rem] sm_mobile:text-[1.3rem] -rotate-90 w-[600px] text_stroke font-black'>Hossain A Creative Agency</motion.div>
+                       <motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ duration:1.6,ease:'linear',delay:3 }} className=' lg:text-[2.8rem] lg_tablet:text-4xl tablet:text-[1.8rem] sm_mobile:text-[1.3rem] -rotate-90 w-[600px] text_stroke font-black'>Hossain A Creative Agency</motion.div>
                     </span>
                     <picture>
                         <motion.img initial={'initial'} animate={'animate'} variants={scaleAnimate} className="lg_tablet:w-[400px]  relative z-[1] tablet:w-80 rounded-lg block" src="./images/banner/banner.jpg" alt="banner png" />
