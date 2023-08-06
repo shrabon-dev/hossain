@@ -14,8 +14,6 @@ export default function Header() {
     const itemListTwo  = useRef(null)
     const logoM  = useRef(null)
 
-
-    
     useEffect(()=>{
 
         let handleScroll = ()=>{
