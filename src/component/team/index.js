@@ -39,7 +39,7 @@ export default function Team() {
     <span className='lg_tablet:w-20 tablet:w-20  rounded-full  h-20 absolute top-32 left-0 z-[-1] bg-[#3dffd5fb] block'></span>
       <span className='lg_tablet:w-32 tablet:w-32 rounded-full  h-32 absolute bottom-32 right-0 z-[-1] bg-[#49f8989a] block'></span>
       <div className='bg-2nd_color/25 rounded-bl-[300px] rounded-tr-[300px] backdrop-blur-md z-20 relative'>
-        <div className='container tablet:py-32 sm_mobile:py-6 overflow-hidden'>
+        <div className='container tablet:py-32 sm_mobile:py-20 overflow-hidden'>
              {/* Section Heading Start */}
              <Title shortTile='Here are all expert members' title='Our Team Member' shortDescription="Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions h" waterMark='Team'/>
          
