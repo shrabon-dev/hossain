@@ -2,8 +2,35 @@ import React from 'react'
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from 'react-icons/fa';
 import Title from '../reuseable/heading';
 import TeamMemberItem from '../reuseable/teamMember';
-
+import { motion,inView,cubicBezier  } from "framer-motion"
 export default function Team() {
+  const container = {
+    show : {
+      transition:{
+        delayChildren:.4,
+        staggerChildren:.35,
+      }
+    }
+  }
+
+  const childAnimateY = {
+    hidden : {
+      opacity:0,
+      y:600,
+    },
+    show : {
+      opacity:1,
+      y:0,
+      transition:{
+        ease:cubicBezier(0.2, .2, .02, 0.92),
+        duration:1.6,
+      }
+    },
+    exit:{
+      opacity:0,
+      y:-200,
+    }
+  }
   return (
     <>
     <div className='relative rounded-tr-[300px] rounded-bl-[300px] z-20'>
@@ -17,14 +44,14 @@ export default function Team() {
              <Title shortTile='Here are all expert members' title='Our Team Member' shortDescription="Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions h" waterMark='Team'/>
          
             {/* Section Heading End */}
-            <div className='flex tablet:justify-between sm_mobile:justify-around flex-wrap items-center lg:gap-10 md:gap-10 sm_mobile:gap-5'>
+            <motion.div initial={'hidden'} whileInView={'show'} variants={container} className='flex tablet:justify-between sm_mobile:justify-around flex-wrap items-center lg:gap-10 md:gap-10 sm_mobile:gap-5'>
                 
-                <TeamMemberItem name="Muhammod Alli" img="./images/team/team (1).jpg" desi="Sr. Software Engineer" linkdine="" fb="" tw="" yt="" />
-                <TeamMemberItem name="Ibrahim" img="./images/team/team (3).jpg" desi="Sr. Software Engineer" linkdine="" fb="" tw="" yt="" />
-                <TeamMemberItem name="Jinnaht Ali" img="./images/team/team (2).jpg" desi="Manager of DF Ltd." linkdine="" fb="" tw="" yt="" />
-                <TeamMemberItem name="Usman Ali" img="./images/team/team (4).jpg" desi="Product Manager" linkdine="" fb="" tw="" yt="" />
+                <TeamMemberItem variants={childAnimateY} name="Muhammod Alli" img="./images/team/team (1).jpg" desi="Sr. Software Engineer" linkdine="" fb="" tw="" yt="" />
+                <TeamMemberItem variants={childAnimateY} name="Ibrahim" img="./images/team/team (3).jpg" desi="Sr. Software Engineer" linkdine="" fb="" tw="" yt="" />
+                <TeamMemberItem variants={childAnimateY} name="Jinnaht Ali" img="./images/team/team (2).jpg" desi="Manager of DF Ltd." linkdine="" fb="" tw="" yt="" />
+                <TeamMemberItem variants={childAnimateY} name="Usman Ali" img="./images/team/team (4).jpg" desi="Product Manager" linkdine="" fb="" tw="" yt="" />
           
-            </div>
+            </motion.div>
         </div>
       </div>
     </div>
