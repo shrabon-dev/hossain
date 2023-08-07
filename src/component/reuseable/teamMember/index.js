@@ -27,8 +27,8 @@ export default function TeamMemberItem(props) {
         duration:1.6,
       }
     }
-
   }
+  
   return (
     <>
             <motion.div variants={props.variants} className='lg:w-48 md:w-48 tablet:w-48 sm_mobile:w-44 group mb-10 text-center'>
@@ -41,7 +41,7 @@ export default function TeamMemberItem(props) {
                     <motion.h3 initial={{ y:-50,opacity:0 }} whileInView={{ y:0,opacity:1}} viewport={{ once:true }} transition={{ duration:1,delay:1 }} className='text-gray-200 font-poppin font-medium text-xl pb-2'>{props.name}</motion.h3>
                     <motion.h6 initial={{ y:-50,opacity:0 }} whileInView={{ y:0,opacity:1}} viewport={{ once:true }} transition={{ duration:1,delay:1 }} className='text-gray-600 font-poppin font-medium text-sm pb-2'>{props.desi}</motion.h6>
                     <div>
-                    <motion.ul initial={'hidden'} whileInView={'show'} variants={subContainer} className='text-white flex space-x-5 items-center justify-center text-center'>
+                    <motion.ul initial={'hidden'} whileInView={'show'}  viewport={{ once:true }}  variants={subContainer} className='text-white flex space-x-5 items-center justify-center text-center'>
                             <motion.li variants={subChildAnimateY}><a className='text-active hover:text-gray-600 duration-300 ease-in-out text-lg' href=''><FaLinkedinIn className='inline-block'/></a></motion.li>
                             <motion.li variants={subChildAnimateY}><a className='text-active hover:text-gray-600 duration-300 ease-in-out text-lg' href=''><FaTwitter className='inline-block'/></a></motion.li>
                             <motion.li variants={subChildAnimateY}><a className='text-active hover:text-gray-600 duration-300 ease-in-out text-lg' href=''><FaYoutube className='inline-block'/></a></motion.li>

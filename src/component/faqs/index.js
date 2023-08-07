@@ -3,6 +3,7 @@ import { FiPlus } from 'react-icons/fi'
 import { AiOutlineMinus } from 'react-icons/ai'
 import { BsArrowReturnRight } from 'react-icons/bs'
 import Title from '../reuseable/heading'
+import { motion,cubicBezier} from "framer-motion"
 
 export default function Faqs() {
 
@@ -19,7 +20,29 @@ export default function Faqs() {
         }
         setFaqs(i)
     }
+    const container = {
+        show : {
+          transition:{
+            delayChildren:.04,
+            staggerChildren:.35,
+          }
+        }
+      }
+      const childAnimateX = {
+        hidden : {
+          opacity:0,
+          x:200,
+        },
+        show : {
+          opacity:1,
+          x:0,
+          transition:{
+            ease:cubicBezier(0.2, .2, .02, 0.92),
+            duration:1,
+          }
+        },
 
+      }
   return (
     <>
         <div className='bg-white rounded-tr-[300px]'>
@@ -44,13 +67,13 @@ export default function Faqs() {
                     {/* ======================= Faqs Image ======================= */}
                     {/* ======================= Faqs Start ======================= */}
                     <div className='md:w-1/2 lg_tablet:w-1/2 tablet:w-1/2 m-auto'>
-                        <div>
+                        <motion.div initial={'hidden'} whileInView={'show'} viewport={{ once:true }} variants={container}>
                             {/* ========== One Faqs Question ============ */}
                             {data.map((item,i) => 
                             
                         
                             
-                            <div className='bg-white shadow-lg shadow-black/25 p-4 rounded mb-5'>
+                            <motion.div variants={childAnimateX} className='bg-white shadow-lg shadow-black/25 p-4 rounded mb-5'>
                                 <h4 onClick={()=>handleAccordion(i)} className='cursor-pointer text-black font-normal lg_tablet:text-xl tablet:text-sm sm_mobile:text-base font-poppin flex justify-between'> {++i}.  {item.title} <span className='cursor-pointer'> 
                                 {faqs === i ?
                                 <AiOutlineMinus onClick={() => setFaqs(!faqs)} className='inline-block'/>
@@ -61,9 +84,9 @@ export default function Faqs() {
                                  <div className={`${faqs === i ? 'faq expanded ' : 'faq'}`}>
                                    <p className='accordine'><span className='text-lg font-medium text-active/70 pr-2'> <span><BsArrowReturnRight className='inline-block text-active'/></span> </span>{item.answere} </p>                              
                                  </div>
-                            </div>
+                            </motion.div>
                                 )}
-                        </div>
+                        </motion.div>
                     </div>
                     {/* ======================= Faqs End ======================= */}
                    </div>

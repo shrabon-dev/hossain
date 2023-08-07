@@ -11,31 +11,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { AiOutlineArrowsAlt } from 'react-icons/ai';
 import Title from '../reuseable/heading';
 
-// function SampleNextArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <>
-//     <HiOutlineArrowNarrowRight
-//       className={className}
-//       style={{ ...style, display: "block", background: "red",fontSize:'40px', width:'50px', }}
-//       onClick={onClick}
-//     />
-  
-//     </>
-//   );
-// }
-
-// function SamplePrevArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <HiOutlineArrowNarrowLeft
-//       className={className}
-//       style={{ ...style, display: "block", background: "green" }}
-//       onClick={onClick}
-//     />
-//   );
-// }
-
 export default function Testimonial() {
 
   // let [slideToShow, setSlideToShow] = useState(3)
@@ -49,18 +24,6 @@ export default function Testimonial() {
   const goToNext = () => {
     sliderRef.current.slickNext();
   };
-
-  // constructor(props) {
-  //   super(props);
-  //   this.next = this.next.bind(this);
-  //   this.previous = this.previous.bind(this);
-  // };
-  // next() {
-  //   this.slider.slickNext();
-  // };
-  // previous() {
-  //   this.slider.slickPrev();
-  // }
 
   var settings = {
     dots: true,
@@ -87,8 +50,6 @@ export default function Testimonial() {
         }
       }
     ]
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />
   };
 
   
